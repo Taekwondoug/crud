@@ -2,18 +2,26 @@
 include_once('conecta.php');
 $conexao = conectar();
 
-if (isset($_POST['cadastrar'])) {
+if (isset($_POST['enviar'])) {
 
     var_dump($_POST);
     
-    $raca = $_POST['raca'];
-    $tipo = $_POST['tipo'];
-    $cor = $_POST['cor'];
-    $nome = $_POST['nome'];
+    $shampoo = $_POST['shampoo'];
+    $condicionador = $_POST['condicionador'];
+    $mascara = $_POST['mascara'];
+    $creme = $_POST['creme'];
+    $reparador = $_POST['reparador'];
 
-    $sql = "INSERT INTO animal (raca, tipo, cor, nome, foto) VALUES ('$raca','$tipo','$cor','$nome','$novo_nome')";
-    mysqli_query($conexao, $sql);
-    header("Location:animais.php");
+
+
+    $sql = "INSERT INTO cabelo (shampoo, condicionador, mascara, creme, reparador) VALUES ('$shampoo','$condicionador','$mascara','$reparador')";
+    $resultado = mysqli_query($conexao, $sql);
+    if ($resultado == true){
+        header("Location:index.php");
+    } else {
+        echo mysqli_errno($conexao) . mysqli_error($conexao);
+    }
+    
 }
 
 if (isset($_POST['editar'])) {

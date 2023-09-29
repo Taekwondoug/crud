@@ -21,7 +21,7 @@
             <hr>
             <div class="row reduc">
 
-                <form action="procAnimal.php" method="POST" enctype="multipart/form-data">
+                <form action="processa.php" method="POST" enctype="multipart/form-data">
 
                     <div class="input-field col s12">
                         <label> Shampoo </label><br>

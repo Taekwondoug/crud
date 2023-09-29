@@ -14,7 +14,7 @@ if (isset($_POST['enviar'])) {
 
 
 
-    $sql = "INSERT INTO cabelo (shampoo, condicionador, mascara, creme, reparador) VALUES ('$shampoo','$condicionador','$mascara','$reparador')";
+    $sql = "INSERT INTO cabelo (shampoo, condicionador, mascara, creme, reparador) VALUES ('$shampoo','$condicionador','$mascara','$creme','$reparador')";
     $resultado = mysqli_query($conexao, $sql);
     if ($resultado == true){
         header("Location:index.php");

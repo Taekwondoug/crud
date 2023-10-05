@@ -21,7 +21,8 @@
             <hr>
             <div class="row reduc">
 
-                <form action="processa.php" method="POST" enctype="multipart/form-data">
+
+                <form action="processaC.php" method="POST">
 
                     <div class="input-field col s12">
                         <label> Shampoo </label><br>

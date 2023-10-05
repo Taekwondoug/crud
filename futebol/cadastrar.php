@@ -11,13 +11,13 @@
 </head>
 <style>
     body{
-        background-color: #ede7f6;
+        background-color: #98FB98;
     }
 </style>
 <body>
 <main>
         <div class="container">
-            <h1 class="center purple-text"> Times </h1>
+            <h1 class="center blue-text text-darken-4"> Times </h1>
             <hr>
             <div class="row reduc">
 
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="input-field col s12">
-                        <button class="waves-effect waves-light btn purple" type="submit" name="enviar">Cadastrar</button>
+                        <button class="waves-effect waves-light btn blue darken-4" type="submit" name="enviar">Cadastrar</button>
                     </div>
 
                 </form>

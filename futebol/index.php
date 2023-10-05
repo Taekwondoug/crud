@@ -17,6 +17,9 @@
 </style>
 <body>
     <?php
+    include "cabecalho.php";
+    ?>
+    <?php
     include_once('conecta.php');
     $conexao = conectar();
 

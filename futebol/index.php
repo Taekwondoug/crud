@@ -12,7 +12,7 @@
 </head>
 <style>
     body{
-        background-color: #3CB371;
+        background-color: #98FB98;
     }
 </style>
 <body>
@@ -28,6 +28,8 @@
 
     ?>
     <div class="container">
+    <h1 class="blue-text text-darken-4"> Tabela de times e melhores jogadores </h1>
+            <hr>
         <table class="striped">
             <thead>
                 <tr>

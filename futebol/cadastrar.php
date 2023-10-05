@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,16 @@
     <title> Times Brasileiros </title>
 </head>
 <style>
-    body{
+    body {
         background-color: #98FB98;
     }
 </style>
+
 <body>
-<main>
+    <?php
+    include "cabecalho.php";
+    ?>
+    <main>
         <div class="container">
             <h1 class="center blue-text text-darken-4"> Times </h1>
             <hr>
@@ -48,4 +53,5 @@
         </div>
     </main>
 </body>
+
 </html>

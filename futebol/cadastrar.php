@@ -36,7 +36,7 @@
 
                     <div class="input-field col s12">
                         <label> Pontos </label><br>
-                        <input type="text" name="pontos" required="required" />
+                        <input type="number" name="pontos" required="required" />
                     </div>
 
                     <div class="input-field col s12">

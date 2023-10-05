@@ -54,7 +54,7 @@
     <div class="container">
       <div class="col s12 center-align">
         <a href="index.php">
-          <img class="responsive-img" src="img/yourHair.png" alt="Logo do site" height="200" width="200">
+          <img class="responsive-img" src="img/fut.png" alt="Logo do site" height="200" width="200">
         </a>
       </div>
     </div>
@@ -63,7 +63,7 @@
       <div class="nav-wrapper">
         <a href="#" data-target="telefone-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="left hide-on-med-and-down" style="margin-left: 40px;">
-          <li><a class="white-text" href="cadastrar.php">Cadastrar Produto</a></li>
+          <li><a class="white-text" href="cadastrar.php">Cadastrar Times</a></li>
         </ul>
       </div>
     </nav>

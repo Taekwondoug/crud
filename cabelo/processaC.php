@@ -25,22 +25,22 @@ if (isset($_POST['enviar'])) {
 }
 
 if (isset($_POST['editar'])) {
-    $id = $_POST['id'];
-    $nome = $_POST['nome'];
-    $tipo = $_POST['tipo'];
-    $cor = $_POST['cor'];
-    $raca = $_POST['raca'];
-    $foto = $_POST['foto'];
+    $id = $_GET['id'];
+    $shampoo = $_POST['shampoo'];
+    $condicionador = $_POST['condicionador'];
+    $marcara = $_POST['mascara'];
+    $creme = $_POST['creme'];
+    $reparador = $_POST['reparador'];
 
-    $sql = "UPDATE animal SET nome='$nome', tipo='$tipo' cor='$cor' raca='$raca' foto='$foto' WHERE id=$id";
+    $sql = "UPDATE cabelo SET shampoo='$shampoo', condicionador='$condicionador' mascara='$mascara' creme='$creme' reparador='$reparador' WHERE id=$id";
     mysqli_query($conexao, $sql);
-    header("Location:listAnimal.php");
+    header("Location:index.php");
 }
 
 if (isset($_GET['deletar'])) {
     $id = $_GET['deletar'];
 
-    $sql = "DELETE FROM animal WHERE id=$id";
+    $sql = "DELETE FROM cabelo WHERE id=$id";
     mysqli_query($conexao, $sql);
-    header("Location:listAnimal.php");
+    header("Location:index.php");
 }

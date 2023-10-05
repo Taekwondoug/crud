@@ -16,6 +16,9 @@
     }
 </style>
 <body>
+    <?php 
+    include "cabecalho.php";
+    ?>
     <?php
     include_once('conecta.php');
     $conexao = conectar();
@@ -48,7 +51,7 @@
                         <a href="formEdit.php?editar=<?php echo $dados['id']; ?>">
                             <img height='24' width='24' src='img/edit.png'> </a>
 
-                        <a href="processa.php?deletar=<?php echo $dados['id']; ?>">
+                        <a href="processaC.php?deletar=<?php echo $dados['id']; ?>">
                             <img height='24' width='24' src='img/del.png' /> </a>
                     </td>
                 </tr>

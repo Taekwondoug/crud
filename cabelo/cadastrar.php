@@ -15,6 +15,9 @@
     }
 </style>
 <body>
+<?php 
+    include "cabecalho.php";
+    ?>
 <main>
         <div class="container">
             <h1 class="center purple-text"> Produtos p/ Seu Cabelo </h1>

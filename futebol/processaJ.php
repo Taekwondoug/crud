@@ -4,14 +4,13 @@ $conexao = conectar();
 
 if (isset($_POST['cadastrar'])) {
 
-    var_dump($_POST);
     
     $tim = $_POST['tim'];
     $jogador = $_POST['jogador'];
     $pontos = $_POST['pontos'];
 
 
-    $sql = "INSERT INTO fut (tim , jogador, pontos) VALUES ('tim','jogador','pontos')";
+    $sql = "INSERT INTO fut (tim , jogador, pontos) VALUES ('$tim','$jogador','$pontos')";
     $resultado = mysqli_query($conexao, $sql);
     if ($resultado == true){
         header("Location:index.php");

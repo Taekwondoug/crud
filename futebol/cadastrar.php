@@ -26,7 +26,7 @@
 
                     <div class="input-field col s12">
                         <label> Time </label><br>
-                        <input type="text" name="time" required="required" />
+                        <input type="text" name="tim" required="required" />
                     </div>
 
                     <div class="input-field col s12">
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="input-field col s12">
-                        <button class="waves-effect waves-light btn blue darken-4" type="submit" name="enviar">Cadastrar</button>
+                        <button class="waves-effect waves-light btn blue darken-4" type="submit" name="cadastrar">Cadastrar</button>
                     </div>
 
                 </form>

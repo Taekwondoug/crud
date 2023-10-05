@@ -40,8 +40,8 @@
             <tbody>
             <?php while ($dados = mysqli_fetch_assoc($resultado)) : ?>
                 <tr>
-                    <td> <?php echo $dados['time']; ?> </td>
-                    <td> <?php echo $dados['jogadores']; ?> </td>
+                    <td> <?php echo $dados['tim']; ?> </td>
+                    <td> <?php echo $dados['jogador']; ?> </td>
                     <td> <?php echo $dados['pontos']; ?> </td>
                     <td>
                         <a href="formEdit.php?editar=<?php echo $dados['id']; ?>">

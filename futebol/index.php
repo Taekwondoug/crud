@@ -49,7 +49,7 @@
                         <a href="formEdit.php?editar=<?php echo $dados['id']; ?>">
                             <img height='24' width='24' src='img/edit.png'> </a>
 
-                        <a href="processa.php?deletar=<?php echo $dados['id']; ?>">
+                        <a href="processaJ.php?deletar=<?php echo $dados['id']; ?>">
                             <img height='24' width='24' src='img/del.png' /> </a>
                     </td>
                 </tr>

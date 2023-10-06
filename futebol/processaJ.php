@@ -26,9 +26,9 @@ if (isset($_POST['editar'])) {
     $jogador = $_POST['jogador'];
     $pontos = $_POST['pontos'];
  
-    $sql = "UPDATE fut SET tim='$tim', jogador='$jogador' pontos='$pontos'";
+    $sql = "UPDATE fut SET tim='$tim', jogador='$jogador', pontos='$pontos'";
     mysqli_query($conexao, $sql);
-    header("Location:.php");
+    header("Location:index.php");
 }
 
 if (isset($_GET['deletar'])) {

@@ -4,7 +4,7 @@ include_once("conecta.php");
 $conexao = conectar();
 $id = $_GET['editar'];
 
-$sql = "SELECT * FROM cabelo WHERE id=" . $id;
+$sql = "SELECT * FROM fut WHERE id=" . $id;
 
 $resultado = mysqli_query($conexao, $sql);
 $dados = mysqli_fetch_assoc($resultado);
@@ -23,7 +23,7 @@ $dados = mysqli_fetch_assoc($resultado);
 </head>
 <style>
     body {
-        background-color: #ede7f6;
+        background-color: #98FB98;
     }
 </style>
 
@@ -32,34 +32,25 @@ $dados = mysqli_fetch_assoc($resultado);
     include "cabecalho.php";
     ?>
     <div class="container">
-        <h1> Editar Produtos </h1>
+        <h1> Editar </h1>
         <hr>
         <div class="row reduc">
-            <form action="processaC.php" method="POST">
+            <form action="processaJ.php" method="POST">
+            <input type="hidden" name="id" value="<?php echo $id; ?>" />
 
                 <div class="input-field col s12">
-                    <label> Shampoo </label><br>
-                    <input type="text" name="shampoo" value="<?php echo $dados['shampoo']; ?>" required="required" />
+                    <label> Time </label><br>
+                    <input type="text" name="tim" value="<?php echo $dados['tim']; ?>" required="required" />
                 </div>
 
                 <div class="input-field col s12">
-                    <label> Condicionador </label><br>
-                    <input type="text" name="condicionador" value="<?php echo $dados['condicionador']; ?>" required="required" />
+                    <label> Jogador </label><br>
+                    <input type="text" name="jogador" value="<?php echo $dados['jogador']; ?>" required="required" />
                 </div>
 
                 <div class="input-field col s12">
-                    <label> Máscara de cabelo </label><br>
-                    <input type="text" name="mascara" value="<?php echo $dados['mascara']; ?>" required="required" />
-                </div>
-
-                <div class="input-field col s12">
-                    <label> Creme </label><br>
-                    <input type="text" name="creme" value="<?php echo $dados['creme']; ?>" required="required" />
-                </div>
-
-                <div class="input-field col s12">
-                    <label> Reparador de pontas </label><br>
-                    <input type="text" name="reparador" value="<?php echo $dados['reparador']; ?>" required="required" />
+                    <label> Pontos </label><br>
+                    <input type="number" name="pontos" value="<?php echo $dados['pontos']; ?>" required="required" />
                 </div>
 
                 <div class="input-field col s12">

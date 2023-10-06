@@ -36,7 +36,7 @@ $dados = mysqli_fetch_assoc($resultado);
         <hr>
         <div class="row reduc">
             <form action="processaC.php" method="POST">
-
+            <input type="hidden" name="id" value="<?php echo $id; ?>" />
                 <div class="input-field col s12">
                     <label> Shampoo </label><br>
                     <input type="text" name="shampoo" value="<?php echo $dados['shampoo']; ?>" required="required" />

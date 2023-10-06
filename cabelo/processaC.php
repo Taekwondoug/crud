@@ -3,8 +3,6 @@ include_once('conecta.php');
 $conexao = conectar();
 
 if (isset($_POST['enviar'])) {
-
-    var_dump($_POST);
     
     $shampoo = $_POST['shampoo'];
     $condicionador = $_POST['condicionador'];
@@ -25,14 +23,14 @@ if (isset($_POST['enviar'])) {
 }
 
 if (isset($_POST['editar'])) {
-    $id = $_GET['id'];
+    $id = $_POST['id'];
     $shampoo = $_POST['shampoo'];
     $condicionador = $_POST['condicionador'];
-    $marcara = $_POST['mascara'];
+    $mascara = $_POST['mascara'];
     $creme = $_POST['creme'];
     $reparador = $_POST['reparador'];
 
-    $sql = "UPDATE cabelo SET shampoo='$shampoo', condicionador='$condicionador' mascara='$mascara' creme='$creme' reparador='$reparador' WHERE id=$id";
+    $sql = "UPDATE cabelo SET shampoo='$shampoo', condicionador='$condicionador', mascara='$mascara', creme='$creme', reparador='$reparador' WHERE id=$id";
     mysqli_query($conexao, $sql);
     header("Location:index.php");
 }

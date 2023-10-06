@@ -36,5 +36,5 @@ if (isset($_GET['deletar'])) {
 
     $sql = "DELETE FROM fut WHERE id=$id";
     mysqli_query($conexao, $sql);
-    header("Location:listAnimal.php");
+    header("Location:index.php");
 }
